@@ -5,4 +5,4 @@ RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17.0.6_10-jre
 COPY --from=builder /target/*.jar app.jar
-CMD ["java", "-jar", "app.jar"] 
+CMD ["java", "-jar", "app.jar"]
