@@ -5,7 +5,7 @@ on:
     paths:
       - 'pom.xml'
       - 'src/**'
-      - Dockerfile
+      - 'Dockerfile'
   
   workflow_dispatch:
 
