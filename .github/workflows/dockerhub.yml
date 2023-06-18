@@ -22,7 +22,7 @@ jobs:
     - name: Run tests
       run: mvn test
     - name: Generate tag
-      run: echo "tag=$(mvn -q help:evaluate -Dexpression=project.version -DforceStdout) + date +'%Y%m%d.%H%M%S'" >> $GITHUB_OUTPUT
+      run: echo "tag=$(mvn -q help:evaluate -Dexpression=project.version -DforceStdout)" + " date +'%Y%m%d.%H%M%S'" >> $GITHUB_OUTPUT
       id: project
     - name: Generate Docker image
       run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=${{ secrets.DOCKERHUB_USERNAME }}/items:${{ steps.project.outputs.tag }}
