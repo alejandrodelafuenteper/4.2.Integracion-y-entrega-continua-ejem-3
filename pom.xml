@@ -11,7 +11,7 @@
 	<groupId>es.codeurjc.rest</groupId>
 	<artifactId>items</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ais-github-actions-X</name>
+	<name>ais-github-actions-X</name> 
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
